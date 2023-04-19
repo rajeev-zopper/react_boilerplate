@@ -14,6 +14,7 @@ const reducers = combineReducers({
 
 export const store = configureStore({
   reducer: reducers,
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(authApi.middleware),
 })
 
 export type AppDispatch = typeof store.dispatch
