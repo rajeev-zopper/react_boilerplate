@@ -3,4 +3,15 @@ interface ILoginInput {
   password: string
 }
 
-export type { ILoginInput }
+interface ILoginResponse {
+  id: number
+  username: strinh
+  email: string
+  firstName: string
+  lastName: string
+  gender: string
+  image: string
+  token: string
+}
+
+export type { ILoginInput, ILoginResponse }
